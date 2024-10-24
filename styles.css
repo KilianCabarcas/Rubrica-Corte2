@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Filtro */
+.filtro {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de las cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Mostrar 4 cards por fila en pantallas grandes */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para las cards individuales */
+.card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividad: pantallas más pequeñas (celulares) */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Mostrar las cards en una sola columna */
+    }
+}
