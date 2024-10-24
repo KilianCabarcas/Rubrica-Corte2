@@ -95,8 +95,8 @@ nav li a {
     text-align: center
     
 }
-.card-container img {
-    width: 100%;
+.card img {
+    width: 110px;
     height: 100px;
     object-fit: cover;
     height: auto;
@@ -107,7 +107,7 @@ nav li a {
     padding: 10px;
     background-color: #f4f4f4;
     border-radius: 0 0 8px 8px;
-    margin-top: ;
+
 }
 .card-container button:hover {
     background-color: #ddd;
@@ -126,8 +126,10 @@ nav li a {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 0 auto;
-    min-height: 200px;
+    height: 350px; /* Altura fija para las cards */
+    width: 200px;
 }
+
 
 #productFilter {
     width: 100%; 
