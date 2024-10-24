@@ -1,9 +1,18 @@
 /* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, 'Segoe UI', Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body::after {
+
+    background-image: linear-gradient(135deg, #413e, #505488, #2F3F80,#161569,#000 ,#5A4894,#A950A1, #DD7CAE);
+    background-size: 500%;
+
+    
 }
 
 /* Header */
@@ -13,7 +22,58 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+nav {
+    display: flex;
+    background-image: linear-gradient(135deg, #413e, #505488, #2F3F80,#161569,#000 ,#5A4894,#A950A1, #DD7CAE);
+    background-size: 500%;
 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+
+}
+nav a {
+ height: 100%;
+ padding: 0 30px;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ color: black;
+}
+nav a:hover {
+    background-color: gray;
+}
+nav li:first-child{
+    margin-right: auto;
+    margin-left: 30px;
+    font-family: 'Nabla', sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+nav li:last-child{
+    margin-right: 20px;
+}
+nav li a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
 /* Filtro */
 .filtro {
     margin: 20px;
@@ -26,8 +86,37 @@ header {
     grid-template-columns: repeat(4, 1fr); /* Mostrar 4 cards por fila en pantallas grandes */
     gap: 20px;
     padding: 20px;
+    max-width: 1rem;
+    justify-content: center;
+    margin: 0 auto;
 }
 
+.card-container p {
+    text-align: center
+    
+}
+.card-container img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    height: auto;
+    border-radius: 8px;
+}
+.card-container button {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 0 0 8px 8px;
+    margin-top: ;
+}
+.card-container button:hover {
+    background-color: #ddd;
+}
+.nav-image {
+    width: 2px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
 /* Estilos para las cards individuales */
 .card {
     background-color: #f4f4f4;
@@ -36,6 +125,28 @@ header {
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+#productFilter {
+    width: 100%; 
+    max-width: 300px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #fff;
+    font-size: 16px; 
+    color: #333; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  
+}
+
+/* Estilos para el contenedor del select */
+.filtro {
+    display: flex;
+    justify-content: center; 
+    padding: 20px; 
 }
 
 /* Footer */

@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <h3>${productTitle}</h3>
                 <img src="${productImage}" alt="${productTitle}" style="max-width: 100%;">
-                <p>${productDescription}</p>
-                <p>${productPrice}</p>
+                
+                <button>${productPrice}</button>
             `;
             cardContainer.appendChild(card);
         });
